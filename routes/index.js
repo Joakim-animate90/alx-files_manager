@@ -26,7 +26,6 @@ const injectRoutes = (api) => {
   api.put('/files/:id/publish', xTokenAuthenticate, FilesController.putPublish);
   api.put('/files/:id/unpublish', xTokenAuthenticate, FilesController.putUnpublish);
   api.get('/files/:id/data', FilesController.getFile);
-
 };
 
 export default injectRoutes;
